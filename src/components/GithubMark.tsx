@@ -1,6 +1,4 @@
-import React from 'react'
-
-import githubDark from '../static/GitHub-Mark-64px.png'
+import { ReactComponent as Github } from '../static/githubMark.svg'
 
 import styles from './GithubMark.module.scss'
 
@@ -10,10 +8,11 @@ const GithubMark = () => {
       href="https://github.com/renodesu/pure-css-mtv3-owl"
       target="_blank"
       rel="noreferrer"
-      className={styles.githubMark}
+      className={styles.link}
       title="Check out the source code on Github!"
     >
-      <img src={githubDark} alt="" width={32} height={32} />
+      <Github className={styles.githubMark} />
+      @renodesu
     </a>
   )
 }

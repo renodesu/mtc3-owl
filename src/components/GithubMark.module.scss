@@ -1,10 +1,16 @@
-.githubMark {
+.link {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-size: 20px;
+  gap: 0.4rem;
+  text-decoration: none;
+}
 
-  img {
-    display: block;
-  }
+.githubMark {
+  width: 32px;
+  height: 32px;
 }
