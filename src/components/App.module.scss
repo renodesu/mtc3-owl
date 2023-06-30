@@ -2,8 +2,8 @@
 
 .App {
   display: flex;
-  min-height: 100vh;
   align-items: center;
+  min-height: 100vh;
   background-color: #fff;
 }
 
@@ -22,20 +22,24 @@ $noseColor: #ffc02e;
 
 .body {
   position: relative;
+
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+
   background-color: #13295a;
+  border-radius: 50%;
 }
 
 %eye {
   position: absolute;
   top: 52%;
   left: 50%;
+
   width: 45%;
   height: 45%;
-  border-radius: 50%;
+
   background-color: #fff;
+  border-radius: 50%;
 }
 
 .eyeLeft {
@@ -53,11 +57,13 @@ $noseColor: #ffc02e;
 %pupil {
   position: absolute;
   top: 52%;
+  transform: translate(-50%, -50%);
+
   width: 30%;
   height: 30%;
-  border-radius: 50%;
+
   background-color: #0f0b08;
-  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 
 .pupilLeft {
@@ -76,16 +82,19 @@ $noseColor: #ffc02e;
   position: absolute;
   top: 55%;
   left: 50%;
-  width: $noseSize;
-  height: $noseSize;
   transform: translate(-50%, -50%);
 
+  width: $noseSize;
+  height: $noseSize;
+
   &::after {
+    content: "";
+
     display: block;
+
+    border-color: $noseColor transparent transparent transparent;
+    border-style: solid;
     border-width: 17px 10px 0;
     border-width: (math.div($noseSize, 2) * 2) math.div($noseSize, 2) 0 math.div($noseSize, 2);
-    border-style: solid;
-    border-color: $noseColor transparent transparent transparent;
-    content: "";
   }
 }

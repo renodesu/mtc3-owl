@@ -1,5 +1,4 @@
 import '../styles/global.scss'
-import React from 'react'
 
 import styles from './App.module.scss'
 import GithubMark from './GithubMark'

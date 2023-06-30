@@ -2,11 +2,13 @@
   position: fixed;
   top: 1rem;
   right: 1rem;
+
   display: flex;
-  align-items: center;
-  color: #000;
-  font-size: 20px;
   gap: 0.4rem;
+  align-items: center;
+
+  font-size: 20px;
+  color: #000;
   text-decoration: none;
 }
 
